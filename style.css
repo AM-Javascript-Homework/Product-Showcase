@@ -14,12 +14,14 @@ body {
     width: 1450px;
     margin: 50px auto; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;  
 }
 .itemsContainer {
     width: 30%;
     display: inline-flex;
     margin-left:30px ;
+    
     height: 540px;
     background-color: #ffff;
     border-radius: 15px;
@@ -106,4 +108,55 @@ body {
     cursor: pointer;
     background-color: rgb(10, 170, 10);
 
+}
+#products {
+    
+    bottom: 18px;
+    position: fixed;
+    
+}
+#products button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: #e61a1a;
+    color: white;
+    
+
+}
+#products button svg {
+    width: 20px;
+    height: 20px;
+}
+#products button:hover {
+    background-color: #851010;
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s;
+}
+#cover{
+    width: 800px;
+    display: none;
+    position: fixed;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #dbdbdb;
+    
+}
+#cover button{
+    background-color: #dbdbdb;
+    border: none;
+    position: absolute;
+    right:10px;
+    top: 10px;
+}
+#cover button svg {
+    fill: #e30707;
+    width: 20px;
+    padding: 5px;
+    height: 20px;
+}
+#cover button svg:hover{
+    cursor: pointer;
 }
