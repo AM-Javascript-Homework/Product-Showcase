@@ -1,3 +1,85 @@
+const products = {
+    bugguti : {
+        gray : {
+            text : "bugguti v8 gary",
+            tozih : "this is bugguti v8 gray",
+            price : "100,000$"
+        },
+        red : {
+            text : "bugguti v8 red",
+            tozih : "this is bugguti v8 red",
+            price : "1,008,000$"
+        },
+        yellow : {
+            text : "bugguti v8 yellow",
+            tozih : "this is bugguti v8 yellow",
+            price : "1,050,000$"
+        },
+    },
+    naissan : {
+        gray : {
+            text : "nassan gary",
+            tozih : "this is nassan gary",
+            price : "200,000$"
+        },
+        red : {
+            text : "nassan red",
+            tozih : "this is nassan red",
+            price : "300,000$"
+        },
+        yellow : {
+            text : "nassan yellow",
+            tozih : "this is nassan yellow",
+            price : "800,000$"
+        },
+    },
+    bmw : {
+        gray : {
+            text : "bmw gary",
+            tozih : "this is bugguti v8 gray",
+            price : "400,000$"
+        },
+        red : {
+            text : "bmw red",
+            tozih : "this is bmw red",
+            price : "700,000$"
+        },
+        yellow : {
+            text : "bmw yellow",
+            tozih : "this is bmw yellow",
+            price : "450,000$"
+        },
+    }
+}
+
+
+
+
+// text & tozih
+let item1Tozih = document.getElementById("item1Tozih")
+let item2Tozih = document.getElementById("item2Tozih")
+let item3Tozih = document.getElementById("item3Tozih")
+
+
+
+let item1Text = document.getElementById("item1Text")
+let item2Text = document.getElementById("item3Text")
+let item3Text = document.getElementById("item3Text")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // items1-------------------------------------------------------------------------------------------------------------------
 //img
 //grayColor
@@ -22,20 +104,36 @@ let itemImg1Yellow = document.getElementById("itemImg1yellow")
 itemsRed1Color.addEventListener("click",itemsRed1Img)
 itemsGray1Color.addEventListener("click",itemsGray1Img)
 itemsYellow1Color.addEventListener("click",itemsYellow1Img)
+
+
+
+
+
 function itemsYellow1Img(){
     itemImg1Yellow.style = "display:block";
     itemImg1gray.style = "display:none";
     itemImg1red.style = "display:none";
+    item1Text.innerHTML = products.bugguti.yellow.text
+    item1Tozih.innerHTML = products.bugguti.yellow.tozih
+    itemsPrice1.innerHTML = products.bugguti.yellow.price
 }
 function itemsGray1Img(){
     itemImg1gray.style = "display:block";
     itemImg1red.style = "display:none";
     itemImg1Yellow.style = "display:none";
+    item1Text.innerHTML = products.bugguti.gray.text
+    item1Tozih.innerHTML = products.bugguti.gray.tozih
+
+    itemsPrice1.innerHTML = products.bugguti.gray.price
 }
 function itemsRed1Img(){
     itemImg1Yellow.style = "display:none";
     itemImg1gray.style = "display:none";
     itemImg1red.style = "display:block";
+    item1Text.innerHTML = products.bugguti.red.text
+    item1Tozih.innerHTML = products.bugguti.red.tozih
+
+    itemsPrice1.innerHTML = products.bugguti.red.price
 }
 let coverContainerItems = document.getElementById("coverContainerItems")
 addBtn1.addEventListener("click",add1)
@@ -69,20 +167,36 @@ let itemImg2Yellow = document.getElementById("itemImg2yellow")
 itemsRed2Color.addEventListener("click",itemsRed2Img)
 itemsGray2Color.addEventListener("click",itemsGray2Img)
 itemsYellow2Color.addEventListener("click",itemsYellow2Img)
+
+
+
+
+
 function itemsYellow2Img(){
     itemImg2Yellow.style = "display:block";
     itemImg2gray.style = "display:none";
     itemImg2red.style = "display:none";
+    item2Text.innerHTML = products.naissan.yellow.text
+    item2Tozih.innerHTML = products.naissan.yellow.tozih
+
+    itemsPrice2.innerHTML = products.naissan.yellow.price
 }
 function itemsGray2Img(){
     itemImg2gray.style = "display:block";
     itemImg2red.style = "display:none";
     itemImg2Yellow.style = "display:none";
+    item2Text.innerHTML = products.naissan.gray.text
+    item2Tozih.innerHTML = products.naissan.gray.tozih
+
+    itemsPrice2.innerHTML = products.naissan.gray.price
 }
 function itemsRed2Img(){
     itemImg2Yellow.style = "display:none";
     itemImg2gray.style = "display:none";
     itemImg2red.style = "display:block";
+    item2Text.innerHTML = products.naissan.red.text
+    item2Tozih.innerHTML = products.naissan.red.tozih
+    itemsPrice2.innerHTML = products.naissan.red.price
 }
 
 
@@ -114,20 +228,33 @@ let itemImg3Yellow = document.getElementById("itemImg3yellow")
 itemsRed3Color.addEventListener("click",itemsRed3Img)
 itemsGray3Color.addEventListener("click",itemsGray3Img)
 itemsYellow3Color.addEventListener("click",itemsYellow3Img)
+
+
+
+
 function itemsYellow3Img(){
     itemImg3Yellow.style = "display:block";
     itemImg3gray.style = "display:none";
     itemImg3red.style = "display:none";
+    item3Text.innerHTML = products.bmw.yellow.text
+    item3Tozih.innerHTML = products.bmw.yellow.tozih
+    itemsPrice3.innerHTML = products.bmw.yellow.price
 }
 function itemsGray3Img(){
     itemImg3gray.style = "display:block";
     itemImg3red.style = "display:none";
     itemImg3Yellow.style = "display:none";
+    item3Text.innerHTML = products.bmw.gray.text
+    item3Tozih.innerHTML = products.bmw.gray.tozih
+    itemsPrice3.innerHTML = products.bmw.gray.price
 }
 function itemsRed3Img(){
     itemImg3Yellow.style = "display:none";
     itemImg3gray.style = "display:none";
     itemImg3red.style = "display:block";
+    item3Text.innerHTML = products.bmw.red.text
+    item3Tozih.innerHTML = products.bmw.red.tozih
+    itemsPrice3.innerHTML = products.bmw.red.price
 }
 
 
@@ -148,7 +275,7 @@ coverBtn.addEventListener("click",cloesCover)
 function cloesCover(){
     if (cover.style = "display:block"){
         cover.style = "display:none";
-
+        
     }
 }
 function showCover (){
